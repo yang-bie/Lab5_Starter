@@ -26,7 +26,7 @@ function init() {
     const audio = document.querySelector('audio');
     const img = document.getElementById('volume-controls').querySelector('img');
     audio.volume = event.target.value / 100;
-    if (event.target.value === 0) {
+    if (event.target.value == 0) {
       img.src = 'assets/icons/volume-level-0.svg';
     } else if (event.target.value < 33) {
       img.src = 'assets/icons/volume-level-1.svg';
